@@ -1,6 +1,8 @@
 "use client";
 
+import { FeaturesSection } from "@/components/features";
 import { SparklesCore } from "@/components/ui/sparkles";
+
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -29,24 +31,12 @@ export default function Home() {
               duration: 1,
               ease: [0.22, 0.5, 0.36, 1],
             }}
-            className="text-5xl md:text-7xl lg:text-9xl text-center text-primary relative z-20"
+            className="text-[15vh] md:text-[20vh] lg:text-[50vh] font-semibold max-w-7xl mx-auto text-center relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-white dark:via-neutral-300 dark:to-background"
           >
             विस्तार
           </motion.h1>
-
-          {/* AI-Powered Space Text */}
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1, ease: [0.22, 0.5, 0.36, 1] }}
-            className="relative z-20"
-          >
-            {/* <p className="text-2xl md:text-4xl text-center mt-10">
-              Advanced frame interpolation and video enhancement for ISRO's
-              space exploration missions
-            </p> */}
-          </motion.div>
         </div>
+        <FeaturesSection />
       </div>
     </>
   );

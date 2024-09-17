@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Teko } from "next/font/google";
+import { Teko, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
 
 const teko = Teko({
-  weight: "600",
   display: "swap",
   subsets: ["devanagari"],
   style: "normal",
+});
+
+const poppins = Poppins({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={teko.className}>
+    <html lang="en" className={`${teko.className} ${poppins.className}`}>
       <body>
         <ThemeProvider
           attribute="class"
