@@ -54,7 +54,7 @@ export function FeaturesSection() {
 
         <p className="text-sm lg:text-xl  max-w-5xl  mt-5 mx-auto text-neutral-500 text-center font-thin dark:text-neutral-300">
           Generate smooth, AI-based satellite video visualizations using frame
-          interpolation techniques and display them on interactive maps
+          interpolation techniques and displays them on interactive maps
         </p>
       </div>
 
