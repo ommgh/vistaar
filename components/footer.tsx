@@ -1,6 +1,7 @@
 import React from "react";
 import { Slack, Github, Linkedin, Twitter, Moon } from "lucide-react";
 import Image from "next/image";
+import { TextHoverEffect } from "./ui/text-hover-effect";
 
 const Footer = () => {
   return (
@@ -8,13 +9,8 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-8 md:mb-0">
-            <div className="text-2xl font-bold mb-2">
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                height={100}
-                width={100}
-              ></Image>
+            <div className="text-2xl font-bold mb-4">
+              <Image src="/logo.png" alt="Logo" height={64} width={64}></Image>
             </div>
             <p className="max-w-xs mb-4">
               Generate smooth, AI-based satellite video visualizations
@@ -52,7 +48,7 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold mb-2">Legal</h3>
               <ul className="space-y-2">
-                <li>Site credit ↗</li>
+                <li>Refrences</li>
                 <li>Telemetry Compliance</li>
                 <li>Terms & Conditions</li>
                 <li>Privacy</li>
@@ -60,10 +56,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-8 pt-8 border-t border-black/10 flex justify-between items-center">
-          {/* <div className="text-3xl font-bold">विस्तार</div> */}
-          {/* <Moon size={24} /> */}
+      </div>
+      <div className="bottom-0">
+        <div className="flex w-full justify-center mt-5 -mb-10">
+          <TextHoverEffect text="विस्तार" />
         </div>
       </div>
     </footer>
