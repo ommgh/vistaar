@@ -47,7 +47,7 @@ export function FeaturesSection() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.5, duration: 1, ease: [0.22, 0.5, 0.36, 1] }}
-          className="relative z-20 text-lg md:text-xl lg:text-7xl font-semibold text-center text-blue-400"
+          className="relative z-20 text-lg md:text-xl lg:text-7xl font-semibold text-center text-[#00BFFF]"
         >
           AI Powered Frame Interpolation
         </motion.div>

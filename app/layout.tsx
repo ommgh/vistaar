@@ -3,6 +3,7 @@ import { Teko, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "next-themes";
+import Footer from "@/components/footer";
 
 const teko = Teko({
   display: "swap",
@@ -36,6 +37,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
