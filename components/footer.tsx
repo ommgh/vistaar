@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { Slack, Github, Linkedin, Twitter, Moon } from "lucide-react";
 import Image from "next/image";
 import { TextHoverEffect } from "./ui/text-hover-effect";
-import { motion } from "framer-motion";
+
 import Link from "next/link";
 
 const Footer = () => {
