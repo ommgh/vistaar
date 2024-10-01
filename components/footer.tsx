@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import { Slack, Github, Linkedin, Twitter, Moon } from "lucide-react";
 import Image from "next/image";
 import { TextHoverEffect } from "./ui/text-hover-effect";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,12 +18,6 @@ const Footer = () => {
             <p className="max-w-xs mb-4">
               Generate smooth, AI-based satellite video visualizations
             </p>
-            <div className="flex space-x-4">
-              <Slack size={20} />
-              <Github size={20} />
-              <Linkedin size={20} />
-              <Twitter size={20} />
-            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -29,8 +26,12 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>Registry</li>
                 <li>Pricing</li>
-                <li>Sign in ↗</li>
-                <li>Docs ↗</li>
+                <li>
+                  <Link href="">Sign in ↗</Link>
+                </li>
+                <li>
+                  <Link href="">Docs ↗</Link>
+                </li>
               </ul>
             </div>
 
@@ -41,7 +42,6 @@ const Footer = () => {
                 <li>About us</li>
                 <li>Careers</li>
                 <li>Contact</li>
-                <li>Brand ↗</li>
               </ul>
             </div>
 
@@ -57,8 +57,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom-0">
-        <div className="flex w-full justify-center mt-5 -mb-10">
+      <div className=" flex flex-col items-center">
+        <div className="w-full justify-center mt-5 -mb-10">
           <TextHoverEffect text="विस्तार" />
         </div>
       </div>

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ThemeToggle from "@/components/ThemeToggle";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
@@ -47,7 +48,9 @@ const Navbar = () => {
           </svg>
         </Link>
         <div className="flex items-centre justify-center gap-5">
-          <ThemeToggle />
+          <Button variant="outline" className=" text-white">
+            LogIn
+          </Button>
         </div>
       </div>
 
